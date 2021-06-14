@@ -4,7 +4,7 @@
 
 [**To-do-list**](https://piotrkubiak.github.io/todolist/)
 
-![Screen](images/screen.jpg)
+![Screen](public/screen.jpg)
 
 ### It is an application for creating a to-do list
 
@@ -15,7 +15,16 @@
 You can approve tasks by clicking Enter.
 The application works correctly on high resolutions and on small ones.
 
+
+
 **Thank you for using the app!**
+
+### Technologies used to create the application:
+
+- HTML
+- CSS (FLEX, GRID, Media queries)
+- JavaScript
+
 
 # Getting Started with Create React App
 
