@@ -2,7 +2,7 @@
 
 ## DEMO
 
-[**To-do-list**](https://piotrkubiak.github.io/todolist/)
+[**To-do-list**](https://piotrkubiak.github.io/todo-list-react/)
 
 ![Screen](public/screen.jpg)
 
