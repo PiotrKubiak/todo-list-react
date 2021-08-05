@@ -7,8 +7,8 @@ import Container from "./Container";
 import { useEffect, useState } from "react";
 
 const getInitialTasks = () => {
-  const tasksFromLocalStorage = localStorage.getItem("tasks");
-  return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : [];
+  const tasksFromLocalStorage = localStorage.getItem("tasks"); //Odczyt: pobieramy sobie z localStorage klucz tasks,
+  return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : []; //Zwracamy z localStorage i przerabiamy metodą parse z powrotem na listę
 };
 
 function App() {
@@ -16,17 +16,17 @@ function App() {
   const [tasks, setTasks] = useState(getInitialTasks);
 
   useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    localStorage.setItem("tasks", JSON.stringify(tasks)); // gdy zostaną zmodyfikowane tasks uruchomi się ta linijka, useEffectem zapisujemy tasks w localStorage, JSON.stringify zamieni nam wartość na string,
   }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
   };
-
+  //Funkcja chowająca gotowe zadania
   const removeTask = (id) => {
     setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
-
+  //Funkcja usuwająca zadania
   const toggleTaskDone = (id) => {
     setTasks((tasks) =>
       tasks.map((task) => {
@@ -38,7 +38,7 @@ function App() {
       })
     );
   };
-
+  //Funkcja przekreślająca zadania
   const addNewTask = (content) => {
     setTasks((task) => [
       ...tasks,
@@ -49,11 +49,11 @@ function App() {
       },
     ]);
   };
-
+  //Funkcja dodająca nowe zadanie
   const setAllDone = () => {
     setTasks((tasks) => tasks.map((task) => ({ ...task, done: true })));
   };
-
+  //Funkcja zaznaczająca wszystkie gotowe zadania
   return (
     <Container className="container">
       <Header title="Lista zadań" />
@@ -83,5 +83,5 @@ function App() {
     </Container>
   );
 }
-
+//Wygląd aplikacji
 export default App;
