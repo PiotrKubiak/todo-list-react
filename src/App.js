@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 const getInitialTasks = () => {
   const tasksFromLocalStorage = localStorage.getItem("tasks"); //Odczyt: pobieramy sobie z localStorage klucz tasks,
-  return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : []; //Zwracamy z localStorage i przerabiamy metodą parse z powrotem na listę
+  return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : []; //Zwracamy z localStorage i przerabiamy metodą parse z powrotem na listę, [] - są po to by na początku gdy nie ma nic w localStorage, była pusta lista.
 };
 
 function App() {
