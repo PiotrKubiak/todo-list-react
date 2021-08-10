@@ -6,14 +6,12 @@ import Header from "./Header";
 import Container from "./Container";
 import { useEffect, useState } from "react";
 
-const getInitialTasks = () => {
-  const tasksFromLocalStorage = localStorage.getItem("tasks"); //Odczyt: pobieramy sobie z localStorage klucz tasks,
-  return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : []; //Zwracamy z localStorage i przerabiamy metodą parse z powrotem na listę, [] - są po to by na początku gdy nie ma nic w localStorage, była pusta lista.
-};
-
 function App() {
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(getInitialTasks);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks)); // gdy zostaną zmodyfikowane tasks uruchomi się ta linijka, useEffectem zapisujemy tasks w localStorage, JSON.stringify zamieni nam wartość na string,
