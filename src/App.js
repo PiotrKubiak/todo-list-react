@@ -81,5 +81,4 @@ function App() {
     </Container>
   );
 }
-//Wygląd aplikacji
 export default App;
