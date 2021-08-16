@@ -6,16 +6,17 @@
 
 ![Screen](public/screen.jpg)
 
-### It is an application for creating a to-do list
+### What is it and how to use it
+
+It is an application for creating a to-do list
 
 1. Enter the various tasks to be performed in the box
 2. When you complete the task, you can click the green icon and mark it as completed
 3. You can also delete a given task by clicking on the red icon
 
+Thanks to the use of Local Storage, the tasks did not get deleted after restarting or refreshing the browser.
 You can approve tasks by clicking Enter.
 The application works correctly on high resolutions and on small ones.
-
-
 
 **Thank you for using the app!**
 
@@ -23,8 +24,9 @@ The application works correctly on high resolutions and on small ones.
 
 - HTML
 - CSS (FLEX, GRID, Media queries)
-- JavaScript
-
+- JavaScript (React)
+- Styled Components
+- Custom hooks
 
 # Getting Started with Create React App
 
