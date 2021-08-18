@@ -14,7 +14,7 @@ export const useTasks = () => {
   }, [tasks]);
 
   const addNewTask = (content) => {
-    setTasks((task) => [
+    setTasks((tasks) => [
       ...tasks,
       {
         content,
