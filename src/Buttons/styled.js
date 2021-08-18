@@ -11,6 +11,7 @@ export const Button = styled.button`
   border: none;
   margin: 0 0 0 20px;
   transition: color 0.5s;
+  cursor: pointer;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-basis: 100%;
@@ -18,11 +19,11 @@ export const Button = styled.button`
   }
 
   &:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
   }
 
   &:active {
-    filter: brightness(120%);
+    filter: brightness(140%);
   }
 
   &:disabled {

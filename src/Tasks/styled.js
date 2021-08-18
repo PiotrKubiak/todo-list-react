@@ -36,6 +36,7 @@ export const Button = styled.button`
   height: 30px;
   padding: 0;
   transition: filter 0.5s;
+  cursor: pointer;
 
   ${({ toggleDone }) =>
     toggleDone &&
@@ -43,11 +44,11 @@ export const Button = styled.button`
       background: ${({ theme }) => theme.color.forestgreen};
 
       &:hover {
-        filter: brightness(110%);
+        filter: brightness(120%);
       }
 
       &:active {
-        filter: brightness(120%);
+        filter: brightness(140%);
       }
     `}
 
@@ -57,11 +58,11 @@ export const Button = styled.button`
       background: ${({ theme }) => theme.color.crimson};
 
       &:hover {
-        filter: brightness(110%);
+        filter: brightness(120%);
       }
 
       &:active {
-        filter: brightness(110%);
+        filter: brightness(140%);
       }
     `}
 `;
