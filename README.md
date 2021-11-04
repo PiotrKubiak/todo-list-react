@@ -4,7 +4,7 @@
 
 [**To-do-list**](https://piotrkubiak.github.io/todo-list-react/)
 
-![Screen](public/screen.jpg)
+![Screen](src/screen.jpg)
 
 ### What is it and how to use it
 
@@ -26,7 +26,8 @@ The application works correctly on high resolutions and on small ones.
 
 - HTML
 - CSS (FLEX, GRID, Media queries)
-- JavaScript (React - Redux)
+- JavaScript (React - Redux, Redux - Saga, Redux - Router)
+- Redux Toolkit
 - Styled Components
 - Custom hooks
 
