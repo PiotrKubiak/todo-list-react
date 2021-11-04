@@ -11,10 +11,10 @@ export default () => (
 
     <Switch>
       <Route path={toTask()}>
-        <Task />
+        <TaskPage />
       </Route>
       <Route path={toTasks()}>
-        <Tasks />
+        <TasksPage />
       </Route>
       <Route path={toAuthor()}>
         <Author />
