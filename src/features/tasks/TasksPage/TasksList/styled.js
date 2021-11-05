@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -65,4 +66,13 @@ export const Button = styled.button`
         filter: brightness(140%);
       }
     `}
+`;
+
+export const StyledLink = styled(NavLink)`
+  color: teal;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 2px solid;
+  }
 `;

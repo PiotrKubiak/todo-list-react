@@ -3,7 +3,7 @@ import {
   useQueryParameter,
   useReplaceQueryParameter,
 } from "../../queryParameters";
-import searchQueryParamName from "../searchQueryParamName";
+import searchQueryParamName from "../../searchQueryParamName";
 import { Wrapper } from "./styled";
 
 export default () => {

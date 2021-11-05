@@ -5,6 +5,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Button from "./Button";
+import Search from "./Search";
 
 export function TasksPage() {
   return (
@@ -24,3 +25,5 @@ export function TasksPage() {
     </Container>
   );
 }
+
+export default TasksPage;
