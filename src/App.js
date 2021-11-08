@@ -1,4 +1,4 @@
-import { TasksPage } from "./features/tasks/TasksPage/index.js";
+import { TasksPage } from "./features/tasks/TasksPage/";
 import { TaskPage } from "./features/tasks/TaskPage";
 import { Author } from "./features/author/Author";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
