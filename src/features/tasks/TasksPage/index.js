@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
-import Button from "./Button";
+import ExampleTaskButton from "./FetchExampleTasksButton";
 import Search from "./Search";
 
 export function TasksPage() {
@@ -14,7 +14,7 @@ export function TasksPage() {
       <Section
         title="Dodaj nowe Zadanie"
         body={<Form />}
-        extraHeaderContent={<Button />}
+        extraHeaderContent={<ExampleTaskButton />}
       />
       <Section title="Wyszukiwarka" body={<Search />} />
       <Section
