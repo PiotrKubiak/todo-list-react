@@ -17,6 +17,7 @@ import { getExampleTasks } from "./getExampleTasks";
 
 function* fetchExampleTasksHandler() {
   try {
+    console.log("fetchExampleTasksHandler");
     yield delay(1000);
     const exampleTasks = yield call(getExampleTasks);
     yield put(fetchExampleTasksSuccess(exampleTasks));
@@ -32,6 +33,6 @@ function* saveTasksInLocalStorageHandler() {
 }
 
 export function* tasksSaga() {
-  yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
+  yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
   yield takeEvery("*", saveTasksInLocalStorageHandler);
 }
