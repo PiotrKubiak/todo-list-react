@@ -11,7 +11,7 @@ import { toTask } from "../../../../routes";
 import searchQueryParamName from "../../searchQueryParamName";
 
 const TaskList = () => {
-  const location = useLocation;
+  const location = useLocation();
   const query = new URLSearchParams(location.search).get(searchQueryParamName);
 
   const tasks = useSelector((state) => selectTasksByQuery(state, query));
