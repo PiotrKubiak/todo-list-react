@@ -1,7 +1,7 @@
 import { toAuthor, toTasks } from "../routes";
 import { List, Item, StyledNavLink } from "./styled";
 
-export default () => {
+const Navigation = () => {
   return (
     <nav>
       <List>
@@ -15,3 +15,5 @@ export default () => {
     </nav>
   );
 };
+
+export default Navigation;
