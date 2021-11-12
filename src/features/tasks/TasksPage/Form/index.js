@@ -34,6 +34,7 @@ const Form = () => {
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <Input
+        autoFocus
         value={newTaskContent}
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
